@@ -24,7 +24,7 @@ export function PageContainer({ children, ...rest }) {
       isSignedIn={auth.isSignedIn}
       email={auth.email}
       onSignOut={auth.signOut}
-      hidePoweredBy={configs.feature("hide_powered_by")}
+      hidePoweredBy={true}
       showWhatsNewLink={configs.feature("show_whats_new_link")}
       showTerms={configs.feature("show_terms")}
       termsUrl={configs.link("terms_of_use", "https://github.com/mozilla/hubs/blob/master/TERMS.md")}
